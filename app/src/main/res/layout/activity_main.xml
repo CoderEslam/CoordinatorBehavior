@@ -9,18 +9,21 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="256dp">
+        android:layout_height="512dp"
+        android:background="@drawable/image">
+
+
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsing"
             android:layout_width="match_parent"
-            android:layout_height="256dp"
+            android:layout_height="512dp"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
             <FrameLayout
                 android:id="@+id/flTitle"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="200dp"
                 android:layout_gravity="bottom|center_horizontal"
                 android:background="#FFFFFF"
                 android:orientation="vertical"
@@ -86,7 +89,7 @@
                 android:id="@+id/tvToolbarTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="56dp"
+                android:layout_marginLeft="112dp"
                 android:gravity="center_vertical"
                 android:text="Toolbar Title"
                 android:textColor="@android:color/black"
@@ -100,7 +103,7 @@
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_gravity="center"
-        android:src="@color/colorAccent"
+        android:src="@drawable/image"
         app:layout_behavior=".ImageBehavior" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
